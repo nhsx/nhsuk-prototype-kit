@@ -1,5 +1,11 @@
 # NHS.UK prototype kit Changelog
 
+## 4.6.1 - 17th August 2021
+
+:wrench: **Fixes**
+
+- Add script to fix bug with unchecked checkboxes and separate bug when only one checkbox is selected.
+
 ## 4.6.0 - 16 August 2021
 
 :new: **New features**
