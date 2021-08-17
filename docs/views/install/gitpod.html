@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  NHS.UK prototype kit - Gitpod installation guide
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      {
+        href: "/docs",
+        text: "Home"
+      }
+    ],
+    href: "/docs/install",
+    text: "Install"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        Install Gitpod
+      </h1>
+      
+      <h2>Install Gitpod to personal repository</h2>
+
+      <ol>
+          <li>Install the Gitpod app to your Github account <a href="https://github.com/apps/gitpod-io/installations/new" data-link="download">here</a></li>
+          <li>Choose to give full access to a select repository or all your repositories</li>
+          <li>Click install</li>
+      </ol>
+
+      <h2>Install Gitpod to personal repository</h2>
+
+      <p>Install the Gitpod app to your Github account <a href="https://github.com/apps/gitpod-io/installations/new" data-link="download">here</a>.</p>
+
+      <p>Add to your github profile and choose to give full access to all your repositories or select a repository.</p>
+
+      <p>Click install.</p>
+
+      <h2>Gitpod on NHSUK organisation</h2>
+      
+      <p>This is for Members of NHSUK specifically.</p>
+
+      <ol>
+        <li>Configure Gitpod on the NHSUK organisation <a href="https://github.com/apps/gitpod-io/installations/new" data-link="download">here</a></li>
+        <li>Choose the repository within the organisation to install Gitpod</li>
+        <li>If you are a repository admin this will automatically install</li>
+        <li>Click install</li>
+      </ol>
+
+      <p>If you're not an admin on the repository you wish to install Gitpod on you will need to request the installation, an admin can approve this in the project, under the  applications section.</p>
+
+      <h2>Gitpod on NHSUK organisation</h2>
+
+      <p>Configure Gitpod on the NHSUK organisation <a href="https://github.com/apps/gitpod-io/installations/new" data-link="download">here</a>.</p>
+
+      <p>Choose the repository within the organisation to install Gitpod.</p>
+
+      <p>If you are a repository admin this will automatically install. If you're not an admin on the repository you wish to install Gitpod on you will need to request the installation, an admin can approve this in the project section under applications.</p>
+
+      <p>Click install.</p>
+
+
+
+
+      {{ backLink({
+        "href": "/docs/install",
+        "text": "Back to Installing the kit",
+        "classes": "nhsuk-u-margin-top-6"
+      }) }}
+
+
+    </div>
+
+  </div>
+{% endblock %}

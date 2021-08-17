@@ -18,8 +18,11 @@ router.post('/install', function (req, res) {
   if (install == "Developer"){
     res.redirect('/docs/install/advanced')
   }
-  else {
+  if (install == "Download"){
     res.redirect('/docs/install/download-zip')
+  }
+  else {
+    res.redirect('/docs/install/gitpod')
   }
 
 })
